@@ -2,7 +2,6 @@ import TimeleftPresenter from './../presenters/timeleftPresenter.js';
 import OsaPresenter from './../presenters/osaPresenter.js';
 import VigselPresenter from './../presenters/vigselPresenter.js';
 import FestPresenter from './../presenters/festPresenter.js';
-import Test from './../test.js';
 
 
 const HomepageView = () => {
@@ -34,7 +33,7 @@ const HomepageView = () => {
             <h1 className="vigsel-titel"> Önskelista </h1>
             <div className="onsk-titel"> Önskelista </div>
             <div className="onsk-text"> Om du skulle vilja ge oss något så har vi gjort en önskelista som du hittar på knappen nedan. Glöm inte att fylla i antalet köpta produkter "registera köp" i önskelistan. </div>
-            <button className="onsk-btn" onClick={()=>window.open("https://google.se", "_blank")}> Önskelista </button>
+            <button className="onsk-btn" onClick={()=>window.open("https://google.se")}> Önskelista </button>
           </section>
           <section className="vigsel" id="Vigsel">
             <VigselPresenter />

@@ -46,6 +46,7 @@ const OsaPresenter = () => {
     setSpeckost("");
     setMail("");
     setÖvrigt("");
+    setKommer("Ja");
   }
 
   return <OsaView setförnamn={(txt)=>setFörnamn(txt)}

@@ -1,6 +1,4 @@
-import OnskelistaView from './../views/onskelistaView.js';
-import React from 'react';
-import { getDatabase, ref, onValue, get} from "firebase/database";
+import { ref, get} from "firebase/database";
 import { database } from './../firebaseConfig.js'
 
 
