@@ -22,7 +22,7 @@ const OsaPresenter = () => {
 
     e.preventDefault();
 
-    {/*db.collection("Anmälda")
+    db.collection("Anmälda")
       .add({
         förnamn: förnamn,
         efternamn: efternamn,
@@ -38,7 +38,6 @@ const OsaPresenter = () => {
       .catch((error) => {
         alert(error.message);
       })
-    */}
 
 
     setFörnamn("");
@@ -46,7 +45,6 @@ const OsaPresenter = () => {
     setSpeckost("");
     setMail("");
     setÖvrigt("");
-    setKommer("Ja");
   }
 
   return <OsaView setförnamn={(txt)=>setFörnamn(txt)}
