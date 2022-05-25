@@ -9,7 +9,7 @@ const App = (props) => {
     <div>
       <div>
         <TopbarPresenter />
-        <HomepagePresenter />*
+        <HomepagePresenter />
       </div>
 
     </div>

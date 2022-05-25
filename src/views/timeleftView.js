@@ -1,10 +1,22 @@
 const TimeleftView = (props) => {
 
-  return <div className="countdown">
-            <div className="timer-element"> <div>{props.days}</div> <div>Dagar</div> </div>
-            <div className="timer-element"> <div>{props.hours}</div> <div>Timmar</div> </div>
-            <div className="timer-element"> <div>{props.minutes}</div> <div>Minuter</div> </div>
-            <div className="timer-element"> <div>{props.seconds}</div> <div>Sekunder</div> </div>
+  return <div className="timer-section">
+            <div className="timer-element">
+              <div className='timer-element-time'>{props.days}</div>
+              <div className='timer-element-string'>Dagar</div>
+            </div>
+            <div className="timer-element">
+              <div className='timer-element-time'>{props.hours}</div>
+              <div className='timer-element-string'>Timmar</div>
+            </div>
+            <div className="timer-element">
+              <div className='timer-element-time'>{props.minutes}</div>
+              <div className='timer-element-string'>Minuter</div>
+            </div>
+            <div className="timer-element">
+              <div className='timer-element-time'>{props.seconds}</div> 
+              <div className='timer-element-string'>Sekunder</div>
+            </div>
           </div>
 
 }

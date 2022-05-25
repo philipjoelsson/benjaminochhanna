@@ -6,28 +6,24 @@ import { animateScroll as scroll } from 'react-scroll';
 const TopbarView = (props) => {
 
 
-
   return (
     <div className="topbar">
-      <LinkR to="/home" onClick={()=>scroll.scrollToTop()} className="title">
-        Benjamin & Hanna
-      </LinkR>
       <div className="menu">
         {props.menu.map((item, index) =>
           <span key={index}>
-            <LinkS to={item} smooth={true} duration={1000} className="menu_item" offset={-100}>
+            <LinkS to={item} onClick={()=>props.onPress()} smooth={true} duration={1000} className="menu_item">
                 {item}
             </LinkS>
           </span>
         )
 
         }
-
       </div>
-      <LinkS to="osa" smooth={true} duration={1000} className="OSA" offset={-100}>
-          OSA
-      </LinkS>
-
+      <div className='burger' onClick={()=>props.onPress()}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
+      </div>
     </div>
   )
 
