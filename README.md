@@ -26,7 +26,7 @@ git clone https://github.com/philipjoelsson/benjaminochhanna.git
 npm install
 ```
 
-3. Run the app with Expo
+3. Run the webpage in your browser on local server
 ```
 npm start
 ```
