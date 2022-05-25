@@ -1,7 +1,7 @@
 # Benjamin och Hannas bröllopssida
 
 ## About the project
-This is the repository of the webpage for Benjamin and Hannas wedding page. 
+This is the repository of the webpage for Benjamin and Hannas wedding page.
 
 ### Frameworks
 This project was built using React.
@@ -36,10 +36,3 @@ npm start
 - React Icons
 - React Scroll
 - React Date Countdown Timer
-
-- React Native Material Ripple
-- React Native Safe Area Context
-- React Native Screens
-- React Native Vector Icons
-- Expo Haptics
-- Expo Status Bar
