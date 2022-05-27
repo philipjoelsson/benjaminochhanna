@@ -1,7 +1,7 @@
 # Benjamin och Hannas bröllopssida
 
 ## About the project
-This is the repository of the webpage for Benjamin and Hannas wedding page.
+This is the repository of the webpage for Benjamin and Hannas wedding page. The page can be found on https://www.hannaochbenjamin.se.
 
 ### Frameworks
 This project was built using React.
