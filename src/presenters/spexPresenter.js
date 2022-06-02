@@ -8,32 +8,42 @@ const SpexPresenter = () => {
   const [tid, setTid] = React.useState('');
   const [utrustning, setUtrustning] = React.useState('');
 
+  const closeJustin = () => {
+    document.getElementById('easterEgg2').style.left = '300vw';
+    document.getElementById('justinBlom').pause();
+  }
+
   const handleSubmit = (e) => {
 
     e.preventDefault();
 
     var namn_b = false;
-    console.log(namn);
 
     if (namn.length > 0 && (/[A-Za-z]/).test(namn)) {
       namn_b = true;
     }
 
-    console.log(namn_b);
-
     if (namn_b) {
 
-      document.getElementById('spex-namn').style.borderColor = '#244056';
+      if (namn == 'Sexyback') {
+        document.getElementById('easterEgg2').style.left = '0px';
+        document.getElementById('justinBlom').play();
+      }
 
-      db.collection("Spex")
-        .add({
-          namn: namn,
-          tid: tid,
-          utrustning: utrustning,
-        })
-        .catch((error) => {
-          alert(error.message);
-        })
+      else {
+
+        document.getElementById('spex-namn').style.borderColor = '#244056';
+
+        db.collection("Spex")
+          .add({
+            namn: namn,
+            tid: tid,
+            utrustning: utrustning,
+          })
+          .catch((error) => {
+            alert(error.message);
+          })
+      }
 
       setNamn('');
       setTid('');
@@ -54,7 +64,8 @@ const SpexPresenter = () => {
                    namn={namn}
                    tid={tid}
                    utrustning={utrustning}
-                   handleSubmit={handleSubmit}/>
+                   handleSubmit={handleSubmit}
+                   closeJustin={()=>closeJustin()}/>
 }
 
 export default SpexPresenter;

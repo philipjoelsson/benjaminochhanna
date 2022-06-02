@@ -1,7 +1,5 @@
 import TimeleftPresenter from './../presenters/timeleftPresenter.js';
 import OsaPresenter from './../presenters/osaPresenter.js';
-import VigselPresenter from './../presenters/vigselPresenter.js';
-import FestPresenter from './../presenters/festPresenter.js';
 import SpexPresenter from './../presenters/spexPresenter.js';
 import { animateScroll } from 'react-scroll';
 import hannabenjamin from './../pictures/hannabenjamin2.jpg';
@@ -78,10 +76,10 @@ const HomepageView = (props) => {
             <section className='fest-page' id='Fest'>
               <div className='fest-info'>
                 <div className='fest-title'> FEST </div>
-                <div className='fest-date'> 17.00 - Edbergs bygdegård </div>
+                <div className='fest-date'> 17.00 - Edsbergs bygdegård </div>
                 <div className='fest-text'>
                   <div>
-                    Bröllopsfesten kommer att vara vid Esbergs bygdegård, ca
+                    Bröllopsfesten kommer att vara vid Edsbergs bygdegård, ca
                     20 minuter från kyrkan med bil.
                   </div>
                   <div>
@@ -99,9 +97,15 @@ const HomepageView = (props) => {
             <section className='onskelista-page' id='Önskelista'>
               <div className='onskelista-title'> ÖNSKELISTA </div>
               <div className='onskelista-text'>
-                Om du önskar ge oss något i present har
-                vi skapat en lista på ting vi önskar oss,
-                som du hittar genom att trycka på knappen nedan.
+                <div>
+                  Om du önskar ge oss något i present har vi skapat en lista
+                  på ting vi önskar oss, som du hittar genom att trycka på
+                  knappen nedan.
+                </div>
+                <div>
+                  Men om ni har någon annan idé på vad ni
+                  skulle vilja ge så är det varmt välkommet!
+                </div>
               </div>
               <button className='onskelista-btn' onClick={()=>window.open('https://presentlistan.nu/A51871/')}>
                 ÖNSKELISTA
