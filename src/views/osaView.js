@@ -4,7 +4,13 @@ const OsaView = (props) => {
 
     <div className='osa-page'>
       <div className='osa-title'> OSA </div>
-      <div className='osa-senast'> Senast 30:e juni </div>
+      <div className='osa-senast'>
+        <div> Senast 30:e juni </div>
+        <div>
+          Kan du inte närvara under dagen är du varmt välkommen att skicka en
+          videohälsning till lukas.1998@hotmail.com
+        </div>
+      </div>
       <form onSubmit={props.submit}>
         <div className='osa-radio-div'>
           <div className='osa-radio-divs' onClick={()=>props.setkommer('Ja')}>
