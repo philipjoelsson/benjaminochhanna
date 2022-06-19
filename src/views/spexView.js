@@ -15,8 +15,7 @@ const SpexView = (props) => {
       <div className='spex-title'> TAL OCH SPEX </div>
       <div className='spex-info'>
         Gästen gör festen! Så om ni har lust får ni gärna bidra till vår fest
-        med spex, sång, lek, tal eller liknade! Anmäl er gärna på förhand så
-        underlättar ni för våra värdar!
+        med spex, sång, lek, tal eller liknade! Anmäl detta senast den 6:e juli!
       </div>
       <form onSubmit={props.handleSubmit}>
         <div className='spex-input'>
